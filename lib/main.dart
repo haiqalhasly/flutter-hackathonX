@@ -18,13 +18,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: true,
       title: 'Meal-a-Nator',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 240, 240, 240)),
         useMaterial3: true,
+        scaffoldBackgroundColor: Color.fromARGB(255, 240, 240, 240)
       ),
       home: MealDetails(),
     );
   }
 }
-
-
-

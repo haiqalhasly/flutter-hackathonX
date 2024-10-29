@@ -28,18 +28,8 @@ class _MealDetailsState extends State<MealDetails> {
  //This is the AppBar --->     
       appBar: AppBar(
         // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        backgroundColor: Color.fromARGB(100, 208, 231, 92),
-        leading: Icon(
-                Icons.arrow_back,
-                size: 40,
-                color: Colors.white,
-              ),
-        actions: [IconButton(onPressed:(){} , icon: Icon(
-        Icons.person_rounded,
-        size: 40,
-              ),
-            ),
-          ],
+        backgroundColor: Color.fromARGB(255, 240, 240, 240),
+
         title: Text("Meal Details",style: TextStyle(fontFamily: "Poppins",fontWeight: FontWeight.bold),),
       ),
 

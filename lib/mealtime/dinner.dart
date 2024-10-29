@@ -16,27 +16,28 @@ class Dinner extends StatelessWidget {
             //THIS IS IMAGE ->
             Padding(
               padding: const EdgeInsets.only(top:20),
-              child: Image.asset(
-                'assets/nasigoreng.png',
-                width: 200,
-                height: 200,
-                fit: BoxFit.cover,
-              ),
-            ),
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24),),
+                      child:ClipRRect(
+                        child: Image.asset(
+                          'assets/nasigoreng.png',
+                          height: 200,
+                          width: 200,
+                          fit: BoxFit.cover,
+                          ),
+                        )
+                      )               
+                    ),
+
             
 
 // This is what type of meals eg: breakfast,lunch..           
-            Padding(
-              padding: const EdgeInsets.only(right: 300),
-              child: Text('Dinner',style: TextStyle(fontFamily: "Poppins",),
-              ),
+            Text('Dinner',style: TextStyle(fontFamily: "Poppins",),
             ),
 
 //This is the meal's name
-            Padding(
-              padding: const EdgeInsets.only(right: 245),
-              child: Text('Nasi Goreng',style: TextStyle(fontFamily: "Poppins",fontSize: 32),
-              ),
+            Text('Nasi Goreng',style: TextStyle(fontFamily: "Poppins",fontSize: 32),
             ),
 
 //Nutritional Information --->
@@ -46,7 +47,7 @@ class Dinner extends StatelessWidget {
                           width: 400,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 208, 231, 92),
                             //     FlutterFlowTheme.of(context).secondaryBackground,
                             boxShadow: [
                               BoxShadow(
@@ -222,7 +223,7 @@ Padding(
           width: 400,
           height: 100,
           decoration: BoxDecoration(
-            color: Color.fromARGB(100, 238, 139, 96),
+            color: Color.fromARGB(255, 255, 255, 255),
             // FlutterFlowTheme.of(context).tertiary,
             boxShadow: [
               BoxShadow(
@@ -274,7 +275,7 @@ Padding(
           width: 400,
           height: 100,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Color.fromARGB(255, 208, 231, 92),
             // FlutterFlowTheme.of(context).secondaryBackground,
             boxShadow: [
               BoxShadow(
